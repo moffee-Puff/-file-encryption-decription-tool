@@ -52,12 +52,48 @@ Run the script:
 
 **   python3 file_crypto.py
 **
-2.Choose the Decrypt option.
+2.Choose the encrypt option.
 
-3.Enter the path to the encrypted file (e.g., filename.enc).
+3.Enter the path to the file you want to encrypt.
 
-4.Enter the password used during encryption.
+4.Enter a strong password (remember this password for decryption).
 
-5.The decrypted file will be saved with the original filename.
+5.The encrypted file will be saved as filename.enc.
+
+Decrypt a File
+Run the script:
+
+**python3 file_crypto.py
+**
+Choose the Decrypt option.
+
+Enter the path to the encrypted file (e.g., filename.enc).
+
+Enter the password used during encryption.
+
+The decrypted file will be saved with the original filename.
+
+Example Workflow
+ ```bash
+   $ python3 file_crypto.py
+Choose an option:
+1. Encrypt a file
+2. Decrypt a file
+Enter your choice (1 or 2): 1
+
+Enter the file path to encrypt: secret.txt
+Enter a password: MyStrongPassword123
+[*] File encrypted successfully: secret.txt.enc
+
+$ python3 file_crypto.py
+Choose an option:
+1. Encrypt a file
+2. Decrypt a file
+Enter your choice (1 or 2): 2
+
+Enter the file path to decrypt: secret.txt.enc
+Enter the password: MyStrongPassword123
+[*] File decrypted successfully: secret.txt
+
 
 
